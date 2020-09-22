@@ -1,0 +1,23 @@
+---
+title: "Bayes Rule"
+author: "Adam Sardar"
+date: "3/9/2020"
+output: html_document
+---
+
+
+$$
+\begin{aligned}
+P \left( D^{+} \middle| M^{+} \right) &=
+
+\frac{P \left( M^{+} \middle| D^{+} \right)P \left( D^{+}\right) }
+     {P \left( M^{+} \right)}  \\
+
+&= \frac{P \left( M^{+} \middle| D^{+} \right)}
+     {P \left( M^{+} \middle| D^{+} \right)P \left( D^{+}\right) + P \left( M^{+} \middle| D^{-} \right)P \left( D^{-}\right)} P \left( D^{+}\right) \\
+     
+&= \frac{P \left( M^{+} \middle| D^{+} \right)}
+     {P \left( M^{+} \middle| D^{+} \right)P \left( D^{+}\right) + P \left( M^{+} \middle| D^{-} \right) \left( 1 - P \left( D^{+}\right) \right)} P \left( D^{+}\right) \\
+     
+&= \frac{TPR \times P \left(\textsf{Positive Incidence Rate} \right)}{TPRP  \times \left(\textsf{Positive Incidence Rate} \right) + FPR \times  \left( 1- P \left(\textsf{Positive Incidence Rate} \right) \right)} 
+\end{aligned}$$
